@@ -1,55 +1,54 @@
 @charset "utf-8";
 
+html {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/chocolate-raspberry.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
+  font-family: 'Helvetica Neue', helvetica, sans-serif;
+  padding: 6rem 0;
+}
 
 h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  width: 30rem;
+  height: 20rem;
+  display: block;
+  background-image: url('../images/latte.svg');
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+h2 {
+  color: rgba(255,255,255, 0.85);
+  text-align: center;
+  font-weight: 500;
+  margin: -3rem 0 3rem;
+}
+
+a {
+  color: rgb(255,255,255);
+  font-size: 0.8rem;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: block;
+}
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
-
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
-
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
+.invite {
+  font-size: 1rem;
+  background-color: #F35351;
+  padding: 1.2rem 2rem;
+  border-radius: 4px;
+  width: 18rem;
 }

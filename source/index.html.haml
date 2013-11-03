@@ -1,10 +1,12 @@
 ---
-title: Welcome to Middleman
+title: Latte
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+%article
+  %header
+    %h1 Latte
+    %h2 Group chat for casual people.
+  %section
+    = mail_to 'alexbaldwin+latte@gmail.com', 'Request an invitation', subject: 'Latte invitation request', body: 'What would we talk about over coffee?', class: 'invite'
+    %br/
+    = link_to 'Log in with your account', 'https://www.flowdock.com/app/simple-casual/latte'
